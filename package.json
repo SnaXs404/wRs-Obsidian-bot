@@ -23,6 +23,7 @@
   "license": "ISC",
   "homepage": "https://github.com/cratermaik,
   "dependencies": {
-    "discord.js": "^11.3.2"
+    "discord.js": "^11.4.2"
   }
 }
+
