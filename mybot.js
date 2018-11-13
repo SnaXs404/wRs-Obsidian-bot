@@ -37,9 +37,9 @@ if (message.content.startsWith(prefix +"servers")){
   }});
 }
 //PLAY LIST BOT <--- CONFIG MUSIC
-if (message.content === 'ob.playlist') {
+if (message.content === '!playlist') {
   message.channel.send(":notes:**Reproduciendo Lista, porfavor espere...**")
-  if (message.channel.type ob.== 'text') return;
+  if (message.channel.type !== 'text') return;
 
         const { voiceChannel } = message.member;
 
@@ -84,7 +84,7 @@ if(message.content.startsWith(prefix + 'ayuda')){
                       '-> '+prefix+'kick <@user>   :: Expulsar a un usuario del servidor incluye razon.\n'+
 
    message.author.send('**MUSICA**\n```\n'+
-                      '-> '+prefix+'playlist       :: Con este comando podras escuchar una lista de reproduccion automatica.\n'+
+                      '-> 'prefix' !playlist       :: Con este comando podras escuchar una lista de reproduccion automatica.\n'+
                       '-> '+prefix+'radio          :: Te permite escuchar buena musica.\n'+
 
    message.author.send('**ESENCIALES**\n```\n'+                       
