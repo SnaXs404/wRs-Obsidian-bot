@@ -311,4 +311,4 @@ if (command === 'servericon'){
 
 //TOKEN DEL BOT
 });
-client.login(process.env.TOKEN);
+client.login(process.env.token);
