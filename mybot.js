@@ -84,7 +84,7 @@ if(message.content.startsWith(prefix + 'ayuda')){
                       '-> '+prefix+'kick <@user>   :: Expulsar a un usuario del servidor incluye razon.\n'+
 
    message.author.send('**MUSICA**\n```\n'+
-                      '-> 'prefix' !playlist       :: Con este comando podras escuchar una lista de reproduccion automatica.\n'+
+                      '-> '+prefix+'!playlist      :: Con este comando podras escuchar una lista de reproduccion automatica.\n'+
                       '-> '+prefix+'radio          :: Te permite escuchar buena musica.\n'+
 
    message.author.send('**ESENCIALES**\n```\n'+                       
