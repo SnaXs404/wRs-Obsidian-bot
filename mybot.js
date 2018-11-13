@@ -37,9 +37,9 @@ if (message.content.startsWith(prefix +"servers")){
   }});
 }
 //PLAY LIST BOT <--- CONFIG MUSIC
-if (message.content === '!playlist') {
+if (message.content === 'ob.playlist') {
   message.channel.send(":notes:**Reproduciendo Lista, porfavor espere...**")
-  if (message.channel.type !== 'text') return;
+  if (message.channel.type ob.== 'text') return;
 
         const { voiceChannel } = message.member;
 
@@ -78,19 +78,25 @@ if(message.content.startsWith(prefix + 'ayuda')){
   message.channel.send('**'+message.author.username+'**| Se te enviaron los comandos por mensaje privado:incoming_envelope::white_check_mark:');
   message.react('510975977250095104');
   message.author.send('**COMANDOS DE wRs Obsidian**\n```\n'+
+
+   message.author.send('**ADMINISTRATIVOS**\n```\n'+                     
+                      '-> '+prefix+'ban <@user>    :: Banear a un usuario del servidor incluye razon.\n'+
+                      '-> '+prefix+'kick <@user>   :: Expulsar a un usuario del servidor incluye razon.\n'+
+
+   message.author.send('**MUSICA**\n```\n'+
+                      '-> '+prefix+'playlist       :: Con este comando podras escuchar una lista de reproduccion automatica.\n'+
+                      '-> '+prefix+'radio          :: Te permite escuchar buena musica.\n'+
+
+   message.author.send('**ESENCIALES**\n```\n'+                       
                       '-> '+prefix+'ping           :: Comprueba la latencia del bot y de tus mensajes.\n'+
                       '-> '+prefix+'servers        :: Muestra el numero los servidores en los que se encuentra el bot.\n'+                      
                       '-> '+prefix+'avatar <@user> :: Muestra el avatar de un usuario.\n'+
-                      '-> '+prefix+'playlist       :: Con este comando podras escuchar una lista de reproduccion automatica.\n'+
-                      '-> '+prefix+'radio          :: Te permite escuchar buena musica.\n'+
                       '-> '+prefix+'decir          :: Hace que el bot diga un mensaje.\n'+
                       '-> '+prefix+'user <@user>   :: Muestra información sobre un usuario mencioando.\n'+
                       '-> '+prefix+'serverinfo     :: Muestra información sobre el servidor en el que estas.\n'+
                       '-> '+prefix+'botinfo        :: Muestra información sobre el Bot.\n'+
                       '-> '+prefix+'cookies        :: Comparte galletas de varios tipos.\n'+
                       '-> '+prefix+'8ball          :: El bot respondera a tus preguntas.\n'+
-                      '-> '+prefix+'ban <@user>    :: Banear a un usuario del servidor incluye razon.\n'+
-                      '-> '+prefix+'kick <@user>   :: Expulsar a un usuario del servidor incluye razon.\n'+
                       '-> '+prefix+'hola           :: Saluda al Bot.\n```\n\n'+
                       '**invitacion del bot se encuentra en nuestro server oficial** :arrow_down:\n'+
                       '**Obsidian - Server guía y de soporte Únete :** \nhttps://discord.gg/p2JHvdd');
