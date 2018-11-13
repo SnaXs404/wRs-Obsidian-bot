@@ -13,17 +13,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/SnaXs404"
+    "url": "https://github.com/cratermaik"
   },
   "keywords": [
     "heroku",
     "discord.js"
   ],
-  "author": "SnaXs404",
-  "license": "ISC",
-  "homepage": "https://github.com/cratermaik,
+  "author": "cratermaik",
+  "license": "MIT",
+  "homepage": "https://github.com/cratermaik",
   "dependencies": {
-    "discord.js": "^11.4.2"
+    "discord.js": "^11.3.2"
   }
 }
-
